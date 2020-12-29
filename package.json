@@ -1,6 +1,6 @@
 {
   "name": "@gmod/tabix",
-  "version": "1.4.6",
+  "version": "1.5.0",
   "description": "Read Tabix-indexed files, supports both .tbi and .csi indexes",
   "license": "MIT",
   "repository": "GMOD/tabix-js",
@@ -28,8 +28,8 @@
     "preversion": "npm run lint && npm test && npm run build",
     "watch": "npm-watch",
     "prepublishOnly": "npm run lint && npm test && npm run build",
-    "postpublish": "git push origin master --follow-tags",
-    "version": "standard-changelog && git add CHANGELOG.md"
+    "version": "standard-changelog && git add CHANGELOG.md",
+    "postversion": "git push --follow-tags"
   },
   "watch": {
     "test": "{src,test}/*.js",
